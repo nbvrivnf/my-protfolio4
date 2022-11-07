@@ -1,5 +1,45 @@
 @charset "utf-8";
+nav {
+  min-height: 10vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-menu {
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.site-menu li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.site-menu li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #2ecc71;
+  transform: scale(0,1);
+  transform-origin: 0% 100%;
+  transition:  0.3s ease;
+}
+.site-menu li:hover::after {
+  transform: scale(1, 1);
 .hero {
   height: 80vh;
   display: flex;
