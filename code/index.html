@@ -192,6 +192,34 @@
       </div>
     </div>
   </footer>
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+      ScrollReveal({ 
+        reset: false, 
+        distance: "200px", 
+        duration: 2000, 
+      });
+      ScrollReveal().reveal('.top_wrapper_title', { delay: 500, origin: "top", duration:2500,
+       distance: "200px"});
+      ScrollReveal().reveal('.top_wrapper_text', { delay: 300, origin: "top", duration:2500,
+       distance: "200px"});
+      ScrollReveal().reveal('.top_wrapper_btn, .top_wrapper_btn a' , 
+      { delay: 300, origin:"top", duration:2500, distance:"200px" });
+
+      ScrollReveal().reveal('.sec01_title', { delay: 500, origin:"top" });
+      ScrollReveal().reveal('.sec01_card', { delay: 1000, duration: 2500, 
+        origin: "bottom", interval:200
+      });
+      ScrollReveal().reveal('.sec02_title', { delay: 500, origin: "left"});
+      ScrollReveal().reveal('.sec02_text', { delay: 900, origin: "bottom"});
+      ScrollReveal().reveal('.sec02_img', { delay: 1500, origin: "right"});
+      ScrollReveal().reveal('.sec03_title', { delay: 500, origin: "left"});
+      ScrollReveal().reveal('.sec03_content', 
+      { delay: 500, origin: "bottom", interval:500, duration:3500 });
+      ScrollReveal().reveal('.sec04_textarea', { delay: 1500, origin: "right"});
+      ScrollReveal().reveal('.company', { delay: 500, origin: "bottom",   });
+  </script>
 </body>
 
 </html>
