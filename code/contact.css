@@ -68,12 +68,9 @@ body {
 
 
 .top-view {
-  height: calc(100vh - 400px);
+  height: calc(100vh - 500px);
   width: 100%;
-  background-image: url(../images/b425253e016493754fb46101586d105e.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color:#0c0b16;
   display: flex;
   align-items: center;
   margin-top: -110px;
