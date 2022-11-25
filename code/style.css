@@ -24,7 +24,54 @@ body {
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
+  padding-top: 110px;
 }
+
+.head {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  padding: 0 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #1a1a1a;
+  color: white;
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+.head_nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.head_nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.head_nav  li::after {
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #2ecc71;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+.head_nav  li:hover::after {
+  transform: scale(1, 1);
+}
+/*--------./head---------------------------*/
 
 header {
   z-index: 100;
