@@ -271,7 +271,12 @@ main {
 .card_btn i{
   padding-left: 10px;
 }
-
+@media screen and (max-width:895px) {
+  .sec01_content {
+    display: flex;
+    flex-direction: column;
+  }  
+}
 /*---------------./sec01------------------------------------*/
 
 
@@ -383,6 +388,23 @@ main {
 
 .sec03_textarea h2 {
   font-size: 30px;
+}
+
+@media screen and (max-width:895px) {
+  .sec02 {
+    height: 150vh;
+  }
+  .sec02_inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec02_textarea {
+    height: min-content;
+    padding-bottom: 100px;
+  }
+  .sec02_img  {
+    min-height: 600px;
+  }
 }
 /*-----------------------------------------------------*/
 
