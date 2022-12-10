@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Oswald:wght@200;700&family=Poppins:ital,wght@0,300;0,400;0,900;1,800&display=swap');
 
 
@@ -37,6 +38,7 @@ body {
 .header-inner a {
   color: white;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .site-menu ul {
@@ -64,12 +66,28 @@ body {
   transform: scale(1, 1);
 }
 
+@media screen and (max-width:375px) {
+  .header-inner {
+    flex-direction: column;
+  }
+  .logo  {
+    transform: translateY(2em);
+  }
+  .site-menu {
+    transform: translateY(.5em);
+  }
+  .top-view-text {
+    display: none;
+  }
+
+
+}
 
 
 .top-view {
   height: calc(100vh - 500px);
   width: 100%;
-  background-color:#0c0b16;
+  background-color: #0c0b16;
   display: flex;
   align-items: center;
   margin-top: -110px;
@@ -87,10 +105,6 @@ body {
   text-align: center;
   color: white;
 }
-
-@media screen and (max-width:375px) {
-  top-view-text {
-     display:none;
 
 /*headerはここまで--------------------------------*/
 
@@ -127,6 +141,7 @@ form {
   color: black;
   font-size: 18px;
   margin-bottom: 16px;
+  width: max-content;
 }
 
 input {
