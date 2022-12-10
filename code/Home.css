@@ -93,12 +93,6 @@ body {
   font-weight: bold;
 }
 
-
-
-
-
-
-
 .top-view-text h1 {
   font-size:  100px;
   color: transparent;
@@ -145,7 +139,30 @@ transition: 0.3s;
   background-color: #258b50;
 }
 
+@media screen and (max-width:375px) {
+  .header-inner {
+    flex-direction: column;
+  }
+  .logo  {
+    transform: translateY(2em);
+  }
+  .site-menu {
+    transform: translateY(.5em);
+  }
+  .top-view-text h1 {
+    font-size:  30px;
+    color: transparent;
+    text-transform: uppercase;
+    padding-top: 70px;
+    -webkit-text-stroke:  1px #fff;
+    background: url(../images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0,0;
+    animation: back 20s linear infinite;
+  }
+}
 
+}
 /*topはここまでーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
 .conteiner {
