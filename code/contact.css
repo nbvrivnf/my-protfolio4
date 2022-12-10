@@ -88,6 +88,10 @@ body {
   color: white;
 }
 
+@media screen and (max-width:375px) {
+  top-view-text {
+     display:none;
+
 /*headerはここまで--------------------------------*/
 
 .title {
