@@ -115,6 +115,7 @@ body {
     -webkit-background-clip: text;
     background-position: 0,0;
     animation: back 20s linear infinite;
+    margin-right: 25px;
   }
 }
 
