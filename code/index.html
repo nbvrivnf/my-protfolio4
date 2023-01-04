@@ -43,9 +43,9 @@
   <main class="main">
     <div class="first-view">
       <div class="first-view-text">
-        <h1>Hi i'm <br>AlfredKaito</h1>
-        <p>NEETs who want to open the door to the future</p>
-        <p class="btn"><a href="#">let's talk</a></p>
+        <h1 class="anim">Hi i'm <br>AlfredKaito</h1>
+        <p class="anim1">NEETs who want to open the door to the future</p>
+        <p class="btn anim"><a href="#">let's talk</a></p>
       </div>
     </div>
 
@@ -117,22 +117,57 @@
   </main>
   <!--./main-->
 
-  <footer>
+  <!---footer-->
     <footer class="footer">
-      <nav class="site-menu">
-        <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <a class="footer-logo" href="./index.html">
-        <h1>LOGO</h1>
-      </a>
-      <p class="footer-tel">TEL 01-2345-6789</p>
-      <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
-      <p class="copyright"><small>&copy;Kissa</small></p>
-    </footer>
+    <nav class="site-menu">
+      <ul>
+        <li><a href="#">about</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <h1>LOGO</h1>
+    </a>
+    <p class="footer-tel">TEL 01-2345-6789</p>
+    <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+    <p class="copyright"><small>&copy;Kissa</small></p>
   </footer>
+<!--./footer-->
+  <!-script--->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    
+    ScrollReveal({
+      reset: false,
+      distance: "100px",
+      duration: 2000,
+    });
+    ScrollReveal().reveal('. ', {
+      delay: 500, origin: "top", duration: 2500,
+      distance: "200px"
+    });
+    ScrollReveal().reveal('.t-text', {
+      delay: 500, origin: "top", duration: 2500,
+      distance: "200px"
+    });
+    ScrollReveal().reveal('.about-left h2 ', { delay: 500, origin: "left" });
+    ScrollReveal().reveal('.about img', { delay: 500, origin: "left" });
+    ScrollReveal().reveal('.about-right', {
+      delay: 1000, duration: 2500,
+      origin: "right"
+    });
+    ScrollReveal().reveal('.portfolio_wrapper h1', { delay: 1500, origin: "top" });
+    ScrollReveal().reveal('.title', { delay: 2000, origin: "bottom" });
+    ScrollReveal().reveal('.card', {
+      delay: 500, origin: "bottom",
+      interval: 200,
+      duration: 3000,
+    });
+  
+  </script>
+  <!--./script-->
+
+
 </body>
 </html>
