@@ -90,7 +90,6 @@
 .about-left h2::after {
   content: '';
   display: block;
-  width: 100px;
   height: 3px;
   margin: 10px 10px;
   background: #2ecc71;
@@ -307,7 +306,7 @@ form .submit:hover {
   padding-right: 10px;
 }
 .first-view-text h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .first-view-text p {
   font-size: 20px;
